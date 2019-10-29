@@ -19,6 +19,8 @@
 		CDA0F5F52348FE8800B2E7F0 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5F42348FE8800B2E7F0 /* AppError.swift */; };
 		CDA0F5F72348FE9600B2E7F0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5F62348FE9600B2E7F0 /* NetworkHelper.swift */; };
 		CDA0F5F92348FEB800B2E7F0 /* UsersFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5F82348FEB800B2E7F0 /* UsersFetchingService.swift */; };
+		DFFB38592368C13000EE2EDB /* UserDetailVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB38582368C13000EE2EDB /* UserDetailVCViewController.swift */; };
+		DFFB385D2368C34700EE2EDB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB385C2368C34700EE2EDB /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CDA0F5F42348FE8800B2E7F0 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		CDA0F5F62348FE9600B2E7F0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		CDA0F5F82348FEB800B2E7F0 /* UsersFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersFetchingService.swift; sourceTree = "<group>"; };
+		DFFB38582368C13000EE2EDB /* UserDetailVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailVCViewController.swift; sourceTree = "<group>"; };
+		DFFB385C2368C34700EE2EDB /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CDA0F5D12348F74900B2E7F0 /* ViewController.swift */,
+				DFFB38582368C13000EE2EDB /* UserDetailVCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 		DFF979B32367D36D0013A230 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DFFB385C2368C34700EE2EDB /* UserTableViewCell.swift */,
 				CDA0F5EF2348F7E300B2E7F0 /* User.swift */,
 			);
 			path = Model;
@@ -247,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA0F5F02348F7E300B2E7F0 /* User.swift in Sources */,
+				DFFB385D2368C34700EE2EDB /* UserTableViewCell.swift in Sources */,
 				CDA0F5D22348F74900B2E7F0 /* ViewController.swift in Sources */,
+				DFFB38592368C13000EE2EDB /* UserDetailVCViewController.swift in Sources */,
 				CDA0F5F52348FE8800B2E7F0 /* AppError.swift in Sources */,
 				CDA0F5CE2348F74900B2E7F0 /* AppDelegate.swift in Sources */,
 				CDA0F5F92348FEB800B2E7F0 /* UsersFetchingService.swift in Sources */,

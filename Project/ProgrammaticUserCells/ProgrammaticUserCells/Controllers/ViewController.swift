@@ -37,21 +37,32 @@ class ViewController: UIViewController {
         }
     }
     
+    private func setConstraints() {
+        self.userTableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            self.userTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.userTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            self.userTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            self.userTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)])
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(userTableView)
+        setConstraints()
         loadUsers()
     }
-    // Do any additional setup after loading the view.
 }
+    // Do any additional setup after loading the view.
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return users.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
